@@ -1,14 +1,11 @@
 package com.example.studentmanagementsystem.entity;
 
-import jakarta.persistence.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
 //@Table( name = "students" )
 @Document("students")
 public class Student {
 
-    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

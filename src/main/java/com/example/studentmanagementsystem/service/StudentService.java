@@ -18,6 +18,7 @@ package com.example.studentmanagementsystem.service;
 import com.example.studentmanagementsystem.entity.Student;
 import com.example.studentmanagementsystem.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,6 +26,7 @@ import java.util.List;
 @Service
 public class StudentService {
     private final StudentRepository studentRepository;
+
 
     @Autowired
     public  StudentService(StudentRepository studentRepository) {
@@ -35,3 +37,25 @@ public class StudentService {
         return studentRepository.findAll();
     }
 }
+
+
+
+
+//@Service
+//public class StudentService {
+//
+//    private final StudentRepository studentMongoRepository;
+////    private final StudentJpaRepository studentJpaRepository;
+//
+//    @Autowired
+//    public StudentService(@Qualifier("studentMongoRepository") StudentRepository studentMongoRepository)
+////                     @Qualifier("studentJpaRepository") StudentJpaRepository studentJpaRepository)
+//    {
+//        this.studentMongoRepository = studentMongoRepository;
+////        this.studentJpaRepository = studentJpaRepository;
+//    }
+//        public List<Student> getAllStudents() {
+//        return studentMongoRepository.findAll();
+//    }
+//}
+
