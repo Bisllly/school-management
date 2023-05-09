@@ -2,6 +2,7 @@ package no.restaff.schoolmanagement.entity;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -12,6 +13,9 @@ public class Classes {
     private Long id;
 
     @Column( name = "name_class", nullable = false)
+
+    @OneToMany(mappedBy = "students")
+    private List<Student> studens;
     private String nameClass;
 
     @ManyToMany(mappedBy = "teachers")
@@ -20,7 +24,8 @@ public class Classes {
     public Classes() {
     }
 
-    public Classes(String nameClass, Set<Teacher> teacher) {
+    public Classes(List<Student> studens, String nameClass, Set<Teacher> teacher) {
+        this.studens = studens;
         this.nameClass = nameClass;
         this.teacher = teacher;
     }
@@ -47,5 +52,13 @@ public class Classes {
 
     public void setTeacher(Set<Teacher> teacher) {
         this.teacher = teacher;
+    }
+
+    public List<Student> getStudens() {
+        return studens;
+    }
+
+    public void setStudens(List<Student> studens) {
+        this.studens = studens;
     }
 }
