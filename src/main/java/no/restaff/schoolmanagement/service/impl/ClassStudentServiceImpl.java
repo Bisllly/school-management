@@ -1,9 +1,7 @@
 package no.restaff.schoolmanagement.service.impl;
 
 import no.restaff.schoolmanagement.entity.Classes;
-import no.restaff.schoolmanagement.entity.Student;
 import no.restaff.schoolmanagement.repository.ClassStudentRepository;
-import no.restaff.schoolmanagement.repository.StudentRepository;
 import no.restaff.schoolmanagement.service.ClassStudentService;
 import org.springframework.stereotype.Service;
 
@@ -19,5 +17,9 @@ public class ClassStudentServiceImpl implements ClassStudentService {
     @Override
     public List<Classes> getAllClassStudent() {
         return classStudentRepository.findAll();
+    }
+    @Override
+    public Classes saveClassStudent(Classes classes) {
+        return classStudentRepository.save(classes);
     }
 }
