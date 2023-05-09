@@ -13,12 +13,10 @@ public class Classes {
     private Long id;
 
     @Column( name = "name_class", nullable = false)
-
-    @OneToMany(mappedBy = "students")
-    private List<Student> studens;
     private String nameClass;
-
-    @ManyToMany(mappedBy = "teachers")
+    @OneToMany(mappedBy = "classes")
+    private List<Student> studens;
+    @ManyToMany(mappedBy = "classes")
     private Set<Teacher> teacher = new HashSet<>();
 
     public Classes() {
@@ -61,4 +59,5 @@ public class Classes {
     public void setStudens(List<Student> studens) {
         this.studens = studens;
     }
+
 }
