@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: file create_teacher.html, edit_teacher.html and teachers.html">
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/serializable/ClassTeacherId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/SchoolManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/SchoolManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Class_Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Class_Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Classes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/studentmanagementsystem/SchoolManagementApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/restaff/schoolmanagement/SchoolManagementApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/studentmanagementsystem/StudentManagementSystemApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/create_student.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +90,8 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="no.restaff.schoolmanagement.service.impl" />
       <recent name="no.restaff.schoolmanagement.service" />
+      <recent name="no.restaff.schoolmanagement.service.impl" />
       <recent name="no.restaff.schoolmanagement.repository" />
       <recent name="no.restaff.schoolmanagement.controller" />
       <recent name="no.restaff.schoolmanagement.entity" />
@@ -188,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683620997193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Add]: file create_student.html, edit_student.html, student.html and folder serialize includes file ClassTeacherId.java&#10;[Modified]: About relationship in Classes.java, Class_Teacher.java and Teacher.java">
+      <created>1683624142326</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683624142326</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes">
+      <created>1683629096202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683629096202</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +231,9 @@
     <MESSAGE value="[Add]: SchoolManagementApplication.java (class main)&#10;[Delete]: package com.example.studentmanagementsystem&#10;[Move]: move all folder about Student entity in package com.example.studentmanagementsystem to package no.restaff.schoolmanagement" />
     <MESSAGE value="[Add]: Relationship between entity Class and Student in Classes.java and Student.java" />
     <MESSAGE value="[Add]: file create_teacher.html, edit_teacher.html and teachers.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add]: file create_teacher.html, edit_teacher.html and teachers.html" />
+    <MESSAGE value="[Add]: file create_student.html, edit_student.html, student.html and folder serialize includes file ClassTeacherId.java&#10;[Modified]: About relationship in Classes.java, Class_Teacher.java and Teacher.java" />
+    <MESSAGE value="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
