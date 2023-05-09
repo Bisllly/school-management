@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: file create_student.html, edit_student.html, student.html and folder serialize includes file ClassTeacherId.java&#10;[Modified]: About relationship in Classes.java, Class_Teacher.java and Teacher.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/ClassController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/repository/ClassRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/service/ClassService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/service/impl/ClassServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/create_class.html" afterDir="false" />
+    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/create_student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create_teacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/create_teacher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit_student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit_teacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit_teacher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683624142326</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes">
+      <created>1683629096202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683629096202</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +232,8 @@
     <MESSAGE value="[Add]: Relationship between entity Class and Student in Classes.java and Student.java" />
     <MESSAGE value="[Add]: file create_teacher.html, edit_teacher.html and teachers.html" />
     <MESSAGE value="[Add]: file create_student.html, edit_student.html, student.html and folder serialize includes file ClassTeacherId.java&#10;[Modified]: About relationship in Classes.java, Class_Teacher.java and Teacher.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add]: file create_student.html, edit_student.html, student.html and folder serialize includes file ClassTeacherId.java&#10;[Modified]: About relationship in Classes.java, Class_Teacher.java and Teacher.java" />
+    <MESSAGE value="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
