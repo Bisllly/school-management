@@ -10,19 +10,27 @@ public class Class_Teacher {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
-    private Student student;
+    @JoinColumn(name = "class_id")
+    private Classes classes;
 
     @ManyToOne
-    @JoinColumn(name = "course_id")
+    @JoinColumn(name = "teacher_id")
     private Teacher teacher;
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
+    public Classes getClasses() {
+        return classes;
+    }
+
+    public void setClasses(Classes classes) {
+        this.classes = classes;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
     }
 
     public void setTeacher(Teacher teacher) {
