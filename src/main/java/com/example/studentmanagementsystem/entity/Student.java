@@ -1,21 +1,22 @@
 package com.example.studentmanagementsystem.entity;
 
-import org.springframework.data.mongodb.core.mapping.Document;
+import jakarta.persistence.*;
 
-//@Table( name = "students" )
-@Document("students")
+@Entity
+@Table( name = "students" )
 public class Student {
 
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @Column( name = "first_name", nullable = false)
+    @Column( name = "first_name", nullable = false)
     private String firstName;
 
-//    @Column( name = "last_name")
+    @Column( name = "last_name")
     private String lastName;
 
-//    @Column( name = "email")
+    @Column( name = "email")
     private String email;
 
     public Student() {}

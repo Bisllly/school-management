@@ -1,6 +1,5 @@
 package com.example.studentmanagementsystem;
 
-import com.example.studentmanagementsystem.entity.Student;
 import com.example.studentmanagementsystem.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
