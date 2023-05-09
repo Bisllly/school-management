@@ -17,6 +17,14 @@ public class Class_Teacher {
     @JoinColumn(name = "teacher_id")
     private Teacher teacher;
 
+    public Class_Teacher() {
+    }
+
+    public Class_Teacher(Classes classes, Teacher teacher) {
+        this.classes = classes;
+        this.teacher = teacher;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
