@@ -1,6 +1,6 @@
-package com.example.studentmanagementsystem.entity;
+package no.restaff.schoolmanagement.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table( name = "students" )

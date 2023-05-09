@@ -1,8 +1,8 @@
 //this is according to video tutorial
 
-package com.example.studentmanagementsystem.service;
+package no.restaff.schoolmanagement.service;
 
-import com.example.studentmanagementsystem.entity.Student;
+import no.restaff.schoolmanagement.entity.Student;
 
 import java.util.List;
 

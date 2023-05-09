@@ -1,11 +1,14 @@
-package com.example.studentmanagementsystem.controller;
+package no.restaff.schoolmanagement.controller;
 
-import com.example.studentmanagementsystem.entity.Student;
-import com.example.studentmanagementsystem.service.StudentService;
+import no.restaff.schoolmanagement.entity.Student;
+import no.restaff.schoolmanagement.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class StudentController {
