@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: folder config: AppConfig, folder controller: TeacherController.java, folder entity: Teacher.java, folder repository: TeacherRepository.java, folder service: TeacherService.java and sub-folder impl: TeacherServiceImpl.java&#10;[Modified]: name Package com.example.studentmanagementsystem to no.restaff.school.management&#10;[Delete]: package com.example">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/studentmanagementsystem/SchoolManagementMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/studentmanagementsystem/SchoolManagementMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/SchoolManagementMain.java" beforeDir="false" />
+    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: file create_teacher.html, edit_teacher.html and teachers.html">
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/serializable/ClassTeacherId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/SchoolManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/SchoolManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Class_Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Class_Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Classes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/studentmanagementsystem/SchoolManagementApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/no/restaff/schoolmanagement/SchoolManagementApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/studentmanagementsystem/StudentManagementSystemApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -71,7 +81,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/admin/IdeaProjects/school-management/src/main/java/com/example/studentmanagementsystem",
+    "last_opened_file_path": "/Users/admin/Downloads/Github/school-management/src/main/resources/templates",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -80,10 +90,38 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/studentmanagementsystem" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="no.restaff.schoolmanagement.service.impl" />
+      <recent name="no.restaff.schoolmanagement.service" />
+      <recent name="no.restaff.schoolmanagement.repository" />
+      <recent name="no.restaff.schoolmanagement.controller" />
+      <recent name="no.restaff.schoolmanagement.entity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SchoolManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.restaff.schoolmanagement.SchoolManagementApplication" />
+      <module name="school-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.restaff.schoolmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SchoolManagementApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,7 +167,28 @@
       <option name="project" value="LOCAL" />
       <updated>1683608149226</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Add]: SchoolManagementApplication.java (class main)&#10;[Delete]: package com.example.studentmanagementsystem&#10;[Move]: move all folder about Student entity in package com.example.studentmanagementsystem to package no.restaff.schoolmanagement">
+      <created>1683619419523</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683619419523</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Add]: Relationship between entity Class and Student in Classes.java and Student.java">
+      <created>1683620100440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683620100440</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Add]: file create_teacher.html, edit_teacher.html and teachers.html">
+      <created>1683620997193</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683620997193</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,7 +220,10 @@
     <MESSAGE value="[Add]: 2 files mvnw and mvnw.cmd" />
     <MESSAGE value="[Add]: tree folders of folder &quot;src&quot;" />
     <MESSAGE value="[Add]: folder config: AppConfig, folder controller: TeacherController.java, folder entity: Teacher.java, folder repository: TeacherRepository.java, folder service: TeacherService.java and sub-folder impl: TeacherServiceImpl.java&#10;[Modified]: name Package com.example.studentmanagementsystem to no.restaff.school.management&#10;[Delete]: package com.example" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add]: folder config: AppConfig, folder controller: TeacherController.java, folder entity: Teacher.java, folder repository: TeacherRepository.java, folder service: TeacherService.java and sub-folder impl: TeacherServiceImpl.java&#10;[Modified]: name Package com.example.studentmanagementsystem to no.restaff.school.management&#10;[Delete]: package com.example" />
+    <MESSAGE value="[Add]: SchoolManagementApplication.java (class main)&#10;[Delete]: package com.example.studentmanagementsystem&#10;[Move]: move all folder about Student entity in package com.example.studentmanagementsystem to package no.restaff.schoolmanagement" />
+    <MESSAGE value="[Add]: Relationship between entity Class and Student in Classes.java and Student.java" />
+    <MESSAGE value="[Add]: file create_teacher.html, edit_teacher.html and teachers.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add]: file create_teacher.html, edit_teacher.html and teachers.html" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />

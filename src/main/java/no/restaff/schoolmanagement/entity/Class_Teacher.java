@@ -1,19 +1,22 @@
 package no.restaff.schoolmanagement.entity;
 
+import no.restaff.schoolmanagement.serializable.ClassTeacherId;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "classes_teachers")
 public class Class_Teacher {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @EmbeddedId
+    private ClassTeacherId id;
 
     @ManyToOne
+    @MapsId("classId")
     @JoinColumn(name = "class_id")
     private Classes classes;
 
     @ManyToOne
+    @MapsId("teacherId")
     @JoinColumn(name = "teacher_id")
     private Teacher teacher;
 
@@ -25,7 +28,11 @@ public class Class_Teacher {
         this.teacher = teacher;
     }
 
-    public void setId(Long id) {
+    public ClassTeacherId getId() {
+        return id;
+    }
+
+    public void setId(ClassTeacherId id) {
         this.id = id;
     }
 
