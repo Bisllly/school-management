@@ -2,6 +2,7 @@ package no.restaff.schoolmanagement.entity;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -19,7 +20,6 @@ public class Teacher {
 
     @Column( name = "email")
     private String email;
-
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "classes_teachers",
             joinColumns = @JoinColumn(name = "teacher_id"),
@@ -75,4 +75,5 @@ public class Teacher {
     public void setClasses(Set<Classes> classes) {
         this.classes = classes;
     }
+
 }
