@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: folder config: AppConfig, folder controller: TeacherController.java, folder entity: Teacher.java, folder repository: TeacherRepository.java, folder service: TeacherService.java and sub-folder impl: TeacherServiceImpl.java&#10;[Modified]: name Package com.example.studentmanagementsystem to no.restaff.school.management&#10;[Delete]: package com.example">
+    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Modified] Classes.java: changed `mappedBy = &quot;students&quot;` and `mappedBy = &quot;teachers&quot;` to mappedBy = &quot;classes&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Class_Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Class_Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/entity/Classes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/studentmanagementsystem/StudentManagementSystemApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683608149226</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Modified] Classes.java: changed `mappedBy = &quot;students&quot;` and `mappedBy = &quot;teachers&quot;` to mappedBy = &quot;classes&quot;">
+      <created>1683622589167</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683622589167</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +203,8 @@
     <MESSAGE value="[Add]: 2 files mvnw and mvnw.cmd" />
     <MESSAGE value="[Add]: tree folders of folder &quot;src&quot;" />
     <MESSAGE value="[Add]: folder config: AppConfig, folder controller: TeacherController.java, folder entity: Teacher.java, folder repository: TeacherRepository.java, folder service: TeacherService.java and sub-folder impl: TeacherServiceImpl.java&#10;[Modified]: name Package com.example.studentmanagementsystem to no.restaff.school.management&#10;[Delete]: package com.example" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add]: folder config: AppConfig, folder controller: TeacherController.java, folder entity: Teacher.java, folder repository: TeacherRepository.java, folder service: TeacherService.java and sub-folder impl: TeacherServiceImpl.java&#10;[Modified]: name Package com.example.studentmanagementsystem to no.restaff.school.management&#10;[Delete]: package com.example" />
+    <MESSAGE value="[Modified] Classes.java: changed `mappedBy = &quot;students&quot;` and `mappedBy = &quot;teachers&quot;` to mappedBy = &quot;classes&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Modified] Classes.java: changed `mappedBy = &quot;students&quot;` and `mappedBy = &quot;teachers&quot;` to mappedBy = &quot;classes&quot;" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
