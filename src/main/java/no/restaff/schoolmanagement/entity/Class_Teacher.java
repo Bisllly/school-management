@@ -16,4 +16,16 @@ public class Class_Teacher {
     @ManyToOne
     @JoinColumn(name = "course_id")
     private Teacher teacher;
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
 }
