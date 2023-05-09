@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>student-management-system</artifactId>
+	<artifactId>school-management-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>student-management-system</name>
 	<description>A Student Management System Using Spring Boot &amp; Thymeleaf Web Application</description>
