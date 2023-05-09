@@ -1,6 +1,6 @@
 package no.restaff.schoolmanagement.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table( name = "teachers" )
