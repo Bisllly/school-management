@@ -1,8 +1,8 @@
-package com.example.studentmanagementsystem.service.impl;
+package no.restaff.schoolmanagement.service.impl;
 
-import com.example.studentmanagementsystem.entity.Student;
-import com.example.studentmanagementsystem.repository.StudentRepository;
-import com.example.studentmanagementsystem.service.StudentService;
+import no.restaff.schoolmanagement.entity.Student;
+import no.restaff.schoolmanagement.repository.StudentRepository;
+import no.restaff.schoolmanagement.service.StudentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

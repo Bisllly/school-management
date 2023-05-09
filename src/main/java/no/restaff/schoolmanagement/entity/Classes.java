@@ -1,6 +1,9 @@
 package no.restaff.schoolmanagement.entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table( name = "classes")
@@ -10,13 +13,21 @@ public class Classes {
     private Long id;
 
     @Column( name = "name_class", nullable = false)
+
+    @OneToMany(mappedBy = "students")
+    private List<Student> studens;
     private String nameClass;
+
+    @ManyToMany(mappedBy = "teachers")
+    private Set<Teacher> teacher = new HashSet<>();
 
     public Classes() {
     }
 
-    public Classes(String nameClass) {
+    public Classes(List<Student> studens, String nameClass, Set<Teacher> teacher) {
+        this.studens = studens;
         this.nameClass = nameClass;
+        this.teacher = teacher;
     }
 
     public Long getId() {
@@ -33,5 +44,21 @@ public class Classes {
 
     public void setNameClass(String nameClass) {
         this.nameClass = nameClass;
+    }
+
+    public Set<Teacher> getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Set<Teacher> teacher) {
+        this.teacher = teacher;
+    }
+
+    public List<Student> getStudens() {
+        return studens;
+    }
+
+    public void setStudens(List<Student> studens) {
+        this.studens = studens;
     }
 }

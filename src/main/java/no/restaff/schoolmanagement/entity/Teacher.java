@@ -1,6 +1,8 @@
 package no.restaff.schoolmanagement.entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table( name = "teachers" )
@@ -18,14 +20,20 @@ public class Teacher {
     @Column( name = "email")
     private String email;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "classes_teachers",
+            joinColumns = @JoinColumn(name = "teacher_id"),
+            inverseJoinColumns = @JoinColumn(name = "class_id"))
+    private Set<Classes> classes = new HashSet<>();
+
     public Teacher() {
     }
 
-    public Teacher(String firstName, String lastName, String email) {
-        super();
+    public Teacher(String firstName, String lastName, String email, Set<Classes> classes) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.classes = classes;
     }
 
     public Long getId() {
@@ -58,5 +66,13 @@ public class Teacher {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Set<Classes> getClasses() {
+        return classes;
+    }
+
+    public void setClasses(Set<Classes> classes) {
+        this.classes = classes;
     }
 }

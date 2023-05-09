@@ -1,6 +1,6 @@
-package com.example.studentmanagementsystem.entity;
+package no.restaff.schoolmanagement.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table( name = "students" )
@@ -19,13 +19,17 @@ public class Student {
     @Column( name = "email")
     private String email;
 
+    @ManyToOne
+    @JoinColumn(name = "class_id")
+    private Classes classes;
+
     public Student() {}
 
-    public Student(String firstName, String lastName, String email) {
-        super();
+    public Student(String firstName, String lastName, String email, Classes classes) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.classes = classes;
     }
 
     public Long getId() {
@@ -58,5 +62,13 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Classes getClasses() {
+        return classes;
+    }
+
+    public void setClasses(Classes classes) {
+        this.classes = classes;
     }
 }
