@@ -14,18 +14,18 @@ public class Classes {
 
     @Column( name = "name_class", nullable = false)
 
-    @OneToMany(mappedBy = "students")
-    private List<Student> studens;
+    @OneToMany(mappedBy = "classes")
+    private List<Student> students;
     private String nameClass;
 
-    @ManyToMany(mappedBy = "teachers")
+    @ManyToMany(mappedBy = "classes")
     private Set<Teacher> teacher = new HashSet<>();
 
     public Classes() {
     }
 
-    public Classes(List<Student> studens, String nameClass, Set<Teacher> teacher) {
-        this.studens = studens;
+    public Classes(List<Student> students, String nameClass, Set<Teacher> teacher) {
+        this.students = students;
         this.nameClass = nameClass;
         this.teacher = teacher;
     }
@@ -54,11 +54,11 @@ public class Classes {
         this.teacher = teacher;
     }
 
-    public List<Student> getStudens() {
-        return studens;
+    public List<Student> getStudents() {
+        return students;
     }
 
-    public void setStudens(List<Student> studens) {
-        this.studens = studens;
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 }

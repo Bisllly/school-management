@@ -1,5 +1,7 @@
 package no.restaff.schoolmanagement.entity;
 
+import no.restaff.schoolmanagement.entity.Student;
+
 import javax.persistence.*;
 
 @Entity
