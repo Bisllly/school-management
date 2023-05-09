@@ -75,12 +75,11 @@
 
                     <div class ="form-group">
                         <label> Class </label>
-                        <select class="form-control">
+                        <select class="form-control" >
                             <option value="">Select a class</option>
-                            <option th:each="student: ${classesList}"
-                                    th:value="${student.id}"
-                                    th:text="${student.nameClass}">
-                            </option>
+                            <option th:each="class : ${classesList}"
+                                    th:value="${class.id}"
+                                    th:text="${class.nameClass}"></option>
                         </select>
                     </div>
 

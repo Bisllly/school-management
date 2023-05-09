@@ -20,9 +20,10 @@ public class StudentController {
     private ClassService classService;
 
     @Autowired
-    public StudentController(StudentService studentService) {
+    public StudentController(StudentService studentService, ClassService classService) {
         super();
         this.studentService = studentService;
+        this.classService = classService;
     }
 
     //handler method to handle list students and return mode and view
@@ -37,6 +38,8 @@ public class StudentController {
         //create student object to hold student form data
         Student student = new Student();
         model.addAttribute("student", student);
+        List<Classes> classesList = classService.getAllClass();
+        model.addAttribute("classesList", classesList);
         return "create_student";
 
     }
