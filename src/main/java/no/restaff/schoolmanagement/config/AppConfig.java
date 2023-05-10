@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
     private TeacherRepository teacherRepository;
-
     @Bean
     public TeacherService teacherService() {
         return new TeacherServiceImpl(teacherRepository);

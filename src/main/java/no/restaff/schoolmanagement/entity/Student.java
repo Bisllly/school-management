@@ -1,6 +1,8 @@
 package no.restaff.schoolmanagement.entity;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table( name = "students" )
@@ -19,17 +21,12 @@ public class Student {
     @Column( name = "email")
     private String email;
 
-    @ManyToOne
-    @JoinColumn(name = "class_id")
-    private Classes classes;
-
     public Student() {}
 
-    public Student(String firstName, String lastName, String email, Classes classes) {
+    public Student(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.classes = classes;
     }
 
     public Long getId() {
@@ -64,11 +61,4 @@ public class Student {
         this.email = email;
     }
 
-    public Classes getClasses() {
-        return classes;
-    }
-
-    public void setClasses(Classes classes) {
-        this.classes = classes;
-    }
 }

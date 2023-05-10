@@ -27,7 +27,7 @@
                 <a class="nav-link" th:href="@{/teachers}">Teacher Management</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/classes}">Class Management</a>
+                <a class="nav-link" th:href="@{/grades}">Class Management</a>
             </li>
         </ul>
     </div>
@@ -73,15 +73,15 @@
                         />
                     </div>
 
-                    <div class ="form-group">
-                        <label> Class </label>
-                        <select class="form-control" >
-                            <option value="">Select a class</option>
-                            <option th:each="class : ${classesList}"
-                                    th:value="${class.id}"
-                                    th:text="${class.nameClass}"></option>
-                        </select>
-                    </div>
+<!--                    <div class ="form-group">-->
+<!--                        <label> Class </label>-->
+<!--                        <select class="form-control" >-->
+<!--                            <option value="">Select a class</option>-->
+<!--                            <option th:each="class : ${classesList}"-->
+<!--                                    th:value="${class.id}"-->
+<!--                                    th:text="${class.nameClass}"></option>-->
+<!--                        </select>-->
+<!--                    </div>-->
 
                     <div class = "box-footer" style="display: flex;justify-content: center;">
                         <button type="submit" class = "btn btn-primary mt-3">
