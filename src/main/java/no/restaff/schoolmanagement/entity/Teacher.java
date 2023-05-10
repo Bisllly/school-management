@@ -21,19 +21,18 @@ public class Teacher {
     @Column( name = "email")
     private String email;
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "classes_teachers",
+    @JoinTable(name = "grades_teachers",
             joinColumns = @JoinColumn(name = "teacher_id"),
-            inverseJoinColumns = @JoinColumn(name = "class_id"))
-    private Set<Classes> classes = new HashSet<>();
+            inverseJoinColumns = @JoinColumn(name = "grade_id"))
+    private Set<Grade> grade = new HashSet<>();
 
     public Teacher() {
     }
 
-    public Teacher(String firstName, String lastName, String email, Set<Classes> classes) {
+    public Teacher(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.classes = classes;
     }
 
     public Long getId() {
@@ -68,12 +67,11 @@ public class Teacher {
         this.email = email;
     }
 
-    public Set<Classes> getClasses() {
-        return classes;
+    public Set<Grade> getGrade() {
+        return grade;
     }
 
-    public void setClasses(Set<Classes> classes) {
-        this.classes = classes;
+    public void setGrade(Set<Grade> grade) {
+        this.grade = grade;
     }
-
 }
