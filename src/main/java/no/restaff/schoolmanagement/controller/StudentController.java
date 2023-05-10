@@ -16,7 +16,6 @@ public class StudentController {
 
     @Autowired
     public StudentController(StudentService studentService) {
-        super();
         this.studentService = studentService;
     }
 
