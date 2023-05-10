@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Modified]: Change &quot;Class&quot; to &quot;Grade&quot; on all file in project">
+    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/TeacherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/repository/TeacherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/repository/TeacherRepository.java" afterDir="false" />
@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683706743707</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;">
+      <created>1683715312687</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683715312687</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,7 +279,8 @@
     <MESSAGE value="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes" />
     <MESSAGE value="[Modified]: file create_student.html and StudentController.java to add option List Classes" />
     <MESSAGE value="[Modified]: Change &quot;Class&quot; to &quot;Grade&quot; on all file in project" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Modified]: Change &quot;Class&quot; to &quot;Grade&quot; on all file in project" />
+    <MESSAGE value="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
