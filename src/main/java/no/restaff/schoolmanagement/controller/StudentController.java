@@ -38,7 +38,6 @@ public class StudentController {
         List<Classes> classesList = classService.getAllClass();
         model.addAttribute("classesList", classesList);
         return "create_student";
-
     }
 
     @PostMapping("/students")
@@ -76,10 +75,21 @@ public class StudentController {
         return "redirect:/students";
     }
 
+    ///testing
     @GetMapping("/students/search")
-    public String searchStudentByFirstName (Model model) {
+    public String searchStudent(Model model) {
+        //create student object to hold student form data
         Student student = new Student();
         model.addAttribute("student", student);
         return "search_student";
     }
+    ////
+
+    @PostMapping("/students/search")
+    public String searchStudentByFirstName (@RequestParam("firstName") String firstName ,Model model) {
+        List<Student> students = studentService.searchStudentByFirstName(firstName);
+        model.addAttribute("students", students);
+        return "search_student";
+    }
+
 }
