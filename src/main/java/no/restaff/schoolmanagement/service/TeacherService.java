@@ -5,6 +5,7 @@ import java.util.List;
 
 public interface TeacherService {
     List<Teacher> getAllTeachers();
+    List<Teacher> findByTeacherFirstName(String name);
 
     Teacher saveTeacher(Teacher teacher);
     Teacher getTeacherById(Long id);
