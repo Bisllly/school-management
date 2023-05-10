@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[SETTING UP] search button in `search_student.html`. Working on returning a list of student searched after clicking search button" />
+    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button.">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search_student.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -247,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683713836706</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button.">
+      <created>1683714033343</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714033343</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,7 +299,8 @@
     <MESSAGE value="[Add] @GetMapping(&quot;/students/search&quot;) to display searching page after clicking Search Student button" />
     <MESSAGE value="[Add] `required` to &quot;Enter Student First Name&quot; placeholder to make sure that user have to type in something in order to search" />
     <MESSAGE value="[SETTING UP] search button in `search_student.html`. Working on returning a list of student searched after clicking search button" />
-    <option name="LAST_COMMIT_MESSAGE" value="[SETTING UP] search button in `search_student.html`. Working on returning a list of student searched after clicking search button" />
+    <MESSAGE value="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button." />
+    <option name="LAST_COMMIT_MESSAGE" value="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button." />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
