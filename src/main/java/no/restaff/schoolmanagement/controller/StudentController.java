@@ -75,7 +75,6 @@ public class StudentController {
         return "redirect:/students";
     }
 
-    ///testing
     @GetMapping("/students/search")
     public String searchStudent(Model model) {
         //create student object to hold student form data
@@ -83,7 +82,6 @@ public class StudentController {
         model.addAttribute("student", student);
         return "search_student";
     }
-    ////
 
     @PostMapping("/students/search")
     public String searchStudentByFirstName (@RequestParam("firstName") String firstName ,Model model) {
