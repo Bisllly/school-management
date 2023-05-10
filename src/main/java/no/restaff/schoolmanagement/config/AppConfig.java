@@ -1,5 +1,8 @@
 package no.restaff.schoolmanagement.config;
 
+import no.restaff.schoolmanagement.repository.StudentRepository;
+import no.restaff.schoolmanagement.service.StudentService;
+import no.restaff.schoolmanagement.service.impl.StudentServiceImpl;
 import no.restaff.schoolmanagement.repository.TeacherRepository;
 import no.restaff.schoolmanagement.service.impl.TeacherServiceImpl;
 import no.restaff.schoolmanagement.service.TeacherService;
