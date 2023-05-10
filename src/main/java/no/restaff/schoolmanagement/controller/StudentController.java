@@ -1,8 +1,6 @@
 package no.restaff.schoolmanagement.controller;
 
-import no.restaff.schoolmanagement.entity.Classes;
 import no.restaff.schoolmanagement.entity.Student;
-import no.restaff.schoolmanagement.service.ClassService;
 import no.restaff.schoolmanagement.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,13 +12,10 @@ import java.util.List;
 @Controller
 public class StudentController {
     private StudentService studentService;
-    private ClassService classService;
 
     @Autowired
-    public StudentController(StudentService studentService, ClassService classService) {
-        super();
+    public StudentController(StudentService studentService) {
         this.studentService = studentService;
-        this.classService = classService;
     }
 
     //handler method to handle list students and return mode and view
@@ -32,11 +27,8 @@ public class StudentController {
 
     @GetMapping("/students/new")
     public String createStudentForm(Model model) {
-        //create student object to hold student form data
         Student student = new Student();
         model.addAttribute("student", student);
-        List<Classes> classesList = classService.getAllClass();
-        model.addAttribute("classesList", classesList);
         return "create_student";
     }
 
