@@ -68,6 +68,7 @@ public class StudentController {
         existingStudent.setLastName(student.getLastName());
         existingStudent.setEmail(student.getEmail());
 
+
         //save updated student object
         studentService.updateStudent((existingStudent));
         return "redirect:/students";
