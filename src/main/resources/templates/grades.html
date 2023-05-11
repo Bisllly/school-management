@@ -27,7 +27,7 @@
                 <a class="nav-link" th:href="@{/teachers}">Teacher Management</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" th:href="@{/classes}">Class Management</a>
+                <a class="nav-link active" th:href="@{/grades}">Class Management</a>
             </li>
         </ul>
     </div>
@@ -52,13 +52,13 @@
         </thead>
 
         <tbody>
-        <tr th:each="class: ${classes}">
-            <td th:text="${class.nameClass}"></td>
+        <tr th:each="grade: ${grades}">
+            <td th:text="${grade.nameGrade}"></td>
             <td style="text-align: center;">
-                <a th:href="@{/classes/edit/{id}(id=${class.id})}"
+                <a th:href="@{/grade/edit/{id}(id=${grade.id})}"
                    class="btn btn-primary">Update</a>
 
-                <a th:href="@{/classes/{id}(id=${class.id})}"
+                <a th:href="@{/grade/{id}(id=${grade.id})}"
                    class="btn btn-danger">Delete</a>
 
             </td>

@@ -41,4 +41,9 @@ public class TeacherServiceImpl implements TeacherService {
     public void deleteTeacherById(Long id) {
         teacherRepository.deleteById(id);
     }
+
+    @Override
+    public List<Teacher> findByTeacherFirstName(String firstName) {
+        return teacherRepository.findByFirstName(firstName);
+    }
 }
