@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;">
+    <list default="true" id="05014791-10db-4452-862e-f57ad4eb8b9f" name="Changes" comment="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/repository/TeacherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/repository/TeacherRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/service/TeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/restaff/schoolmanagement/service/impl/TeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,26 +16,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="dev/hang" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
-  }
-}]]></component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -68,14 +53,6 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="57acfec0-57ca-4eec-885d-484a4f4c9fe7" />
-        <option name="url" value="https://github.com/Bisllly/school-management" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -87,29 +64,29 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2Pa9v1w908ywcFNsYiwEi1reBhL" />
+  <component name="ProjectId" id="2PaDJDfJJSXPToIM8jjbDIZ0uhM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path": "/Users/admin/Downloads/student-management-system",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/admin/Downloads/Github/school-management/src/main/resources/templates",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path&quot;: &quot;/Users/admin/Downloads/student-management-system&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/admin/Downloads/Github/school-management/src/main/resources/templates&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -118,14 +95,14 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="no.restaff.schoolmanagement.serializable" />
-      <recent name="no.restaff.schoolmanagement.service" />
       <recent name="no.restaff.schoolmanagement.service.impl" />
+      <recent name="no.restaff.schoolmanagement.service" />
       <recent name="no.restaff.schoolmanagement.repository" />
       <recent name="no.restaff.schoolmanagement.controller" />
+      <recent name="no.restaff.schoolmanagement.entity" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SchoolManagementApplication">
     <configuration name="SchoolManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="no.restaff.schoolmanagement.SchoolManagementApplication" />
       <module name="school-management-system" />
@@ -139,8 +116,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="school-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.restaff.schoolmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.restaff.schoolmanagement" />
+      <option name="MAIN_CLASS_NAME" value="no.restaff.schoolmanagement.StudentSearchTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentSearchTest.testSearchStudent" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="school-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.restaff.schoolmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.restaff.schoolmanagement" />
+      <option name="MAIN_CLASS_NAME" value="no.restaff.schoolmanagement.StudentSearchTest" />
+      <option name="METHOD_NAME" value="testSearchStudent" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SchoolManagementApplication" />
+        <item itemvalue="TestNG.StudentSearchTest.testSearchStudent" />
+        <item itemvalue="TestNG.StudentSearchTest" />
+        <item itemvalue="Application.SchoolManagementApplication" />
         <item itemvalue="Application.SchoolManagementApplication" />
       </list>
     </recent_temporary>
@@ -210,42 +226,77 @@
       <option name="project" value="LOCAL" />
       <updated>1683620997193</updated>
     </task>
-    <task id="LOCAL-00009" summary="[Add]: file create_student.html, edit_student.html, student.html and folder serialize includes file ClassTeacherId.java&#10;[Modified]: About relationship in Classes.java, Class_Teacher.java and Teacher.java">
-      <created>1683624142326</created>
+    <task id="LOCAL-00009" summary="[Added] saveStudent in Student Controller">
+      <created>1683631434180</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1683624142326</updated>
+      <updated>1683631434180</updated>
     </task>
-    <task id="LOCAL-00010" summary="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes">
-      <created>1683629096202</created>
+    <task id="LOCAL-00010" summary="[Refactor] from ClassStudent to Major">
+      <created>1683699685557</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1683629096202</updated>
+      <updated>1683699685557</updated>
     </task>
-    <task id="LOCAL-00011" summary="[Modified]: file create_student.html and StudentController.java to add option List Classes">
-      <created>1683630412451</created>
+    <task id="LOCAL-00011" summary="[Delete] files related to Major because no longer in use">
+      <created>1683700121202</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1683630412451</updated>
+      <updated>1683700121202</updated>
     </task>
-    <task id="LOCAL-00012" summary="[Modified]: Change &quot;Class&quot; to &quot;Grade&quot; on all file in project">
-      <created>1683706743707</created>
+    <task id="LOCAL-00012" summary="[Add] `Search Student` button in `students.html`">
+      <created>1683706362301</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1683706743707</updated>
+      <updated>1683706362301</updated>
     </task>
-    <task id="LOCAL-00013" summary="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;">
-      <created>1683715312687</created>
+    <task id="LOCAL-00013" summary="[Add] `search_student.html` for displaying searching form for student">
+      <created>1683706469060</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1683715312687</updated>
+      <updated>1683706469060</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[Add] @GetMapping(&quot;/students/search&quot;) to display searching page after clicking Search Student button">
+      <created>1683708318763</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683708318763</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[Add] `required` to &quot;Enter Student First Name&quot; placeholder to make sure that user have to type in something in order to search">
+      <created>1683710217112</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683710217112</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[SETTING UP] search button in `search_student.html`. Working on returning a list of student searched after clicking search button">
+      <created>1683712227760</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683712227760</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[SETTING UP] search button in `search_student.html`. Working on returning a list of student searched after clicking search button">
+      <created>1683713836706</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683713836706</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button.">
+      <created>1683714033343</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714033343</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +310,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/mysql" />
+                        <option value="devcuong1" />
                       </list>
                     </value>
                   </entry>
@@ -280,12 +331,16 @@
     <MESSAGE value="[Add]: SchoolManagementApplication.java (class main)&#10;[Delete]: package com.example.studentmanagementsystem&#10;[Move]: move all folder about Student entity in package com.example.studentmanagementsystem to package no.restaff.schoolmanagement" />
     <MESSAGE value="[Add]: Relationship between entity Class and Student in Classes.java and Student.java" />
     <MESSAGE value="[Add]: file create_teacher.html, edit_teacher.html and teachers.html" />
-    <MESSAGE value="[Add]: file create_student.html, edit_student.html, student.html and folder serialize includes file ClassTeacherId.java&#10;[Modified]: About relationship in Classes.java, Class_Teacher.java and Teacher.java" />
-    <MESSAGE value="[Add]: file create_class.html, edit_class.html, classes.html, ClassController.java, ClassRepository, ClassService.java,ClassServiceImpl.java&#10;[Modified]: file create_student.html to add option List Classes" />
-    <MESSAGE value="[Modified]: file create_student.html and StudentController.java to add option List Classes" />
-    <MESSAGE value="[Modified]: Change &quot;Class&quot; to &quot;Grade&quot; on all file in project" />
-    <MESSAGE value="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add]: Function &quot;Search Teacher for Firstname&quot;&#10;[Modified]: TeacherController.java, TeacherRepository.java, TeacherService.java ,TeacherServiceImpl.java and teachers.html to built function &quot;Search Teacher for Firstname&quot;" />
+    <MESSAGE value="[Added] saveStudent in Student Controller" />
+    <MESSAGE value="[Refactor] from ClassStudent to Major" />
+    <MESSAGE value="[Delete] files related to Major because no longer in use" />
+    <MESSAGE value="[Add] `Search Student` button in `students.html`" />
+    <MESSAGE value="[Add] `search_student.html` for displaying searching form for student" />
+    <MESSAGE value="[Add] @GetMapping(&quot;/students/search&quot;) to display searching page after clicking Search Student button" />
+    <MESSAGE value="[Add] `required` to &quot;Enter Student First Name&quot; placeholder to make sure that user have to type in something in order to search" />
+    <MESSAGE value="[SETTING UP] search button in `search_student.html`. Working on returning a list of student searched after clicking search button" />
+    <MESSAGE value="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button." />
+    <option name="LAST_COMMIT_MESSAGE" value="[FINISH] creating search function. &#10;Search for student by their firstname and resulting in their firstName, lastName, and email after clicking `Search` button." />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
