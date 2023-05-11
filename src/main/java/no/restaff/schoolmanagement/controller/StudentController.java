@@ -5,10 +5,9 @@ import no.restaff.schoolmanagement.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 public class StudentController {
@@ -19,6 +18,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
+    //handler method to handle list students and return mode and view
     @GetMapping("/students")
     public String listStudents(Model model) {
         model.addAttribute("students", studentService.getAllStudents());
@@ -49,20 +49,37 @@ public class StudentController {
             @ModelAttribute("student") Student student,
             Model model) {
 
+        // get student from database by id
         Student existingStudent = studentService.getStudentById(id);
         existingStudent.setId(id);
         existingStudent.setFirstName(student.getFirstName());
         existingStudent.setLastName(student.getLastName());
         existingStudent.setEmail(student.getEmail());
 
+
+        //save updated student object
         studentService.updateStudent((existingStudent));
         return "redirect:/students";
     }
-
     @GetMapping("/students/{id}")
     public String deleteStudents(@PathVariable Long id) {
         studentService.deleteStudentById(id);
         return "redirect:/students";
+    }
+
+    @GetMapping("/students/search")
+    public String searchStudent(Model model) {
+        //create student object to hold student form data
+        Student student = new Student();
+        model.addAttribute("student", student);
+        return "search_student";
+    }
+
+    @PostMapping("/students/search")
+    public String searchStudentByFirstName (@RequestParam("firstName") String firstName ,Model model) {
+        List<Student> students = studentService.searchStudentByFirstName(firstName);
+        model.addAttribute("students", students);
+        return "search_student";
     }
 
 }

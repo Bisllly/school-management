@@ -41,7 +41,6 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudentById(Long id) {
         studentRepository.deleteById(id);
     }
-
     @Override
     public List<Student> searchStudentByFirstName(String firstName) {
         return studentRepository.findByFirstName(firstName);
